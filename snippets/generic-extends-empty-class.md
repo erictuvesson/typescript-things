@@ -1,3 +1,5 @@
+Not sure what the purpose of this is,
+but something that can cause some headache if you don't understand it.
 
 ### Error:
 ```ts
