@@ -1,5 +1,15 @@
+# Duck typing
+
 Not sure what the purpose of this is,
 but something that can cause some headache if you don't understand it.
+
+This is the same when you are using interfaces.
+
+Coming from C# this is very confusing at first,
+with [Enable type parameter lower-bound syntax (#14520)](https://github.com/microsoft/TypeScript/issues/14520) this should be solved.
+
+I see a lot of benefits from duck typings in this case,
+just in more cases I want to be specific in types.
 
 ### Correct, we are happy with this:
 The problem is that `Test1Options` is required to have content to be able to inherit it.
