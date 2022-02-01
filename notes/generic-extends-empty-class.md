@@ -1,7 +1,9 @@
 Not sure what the purpose of this is,
 but something that can cause some headache if you don't understand it.
 
-### Error:
+### Correct, we are happy with this:
+The problem is that `Test1Options` is required to have content to be able to inherit it.
+
 ```ts
 class Test1Options {
     a: number
@@ -16,7 +18,10 @@ class MyTest1Options {}
 class MyTest1 extends Test1<MyTest1Options> {}
 ```
 
-### Success:
+### Incorrect, but compiles:
+Would expect that `MyTest2Options` is required to inherit `Test2Options`,
+but since the object is empty Typescript doesn't care.
+
 ```ts
 class Test2Options {}
 class Test2<T extends Test2Options> {
