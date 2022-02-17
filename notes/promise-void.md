@@ -36,7 +36,7 @@ function asyncFunc() {
 async function invokeTest() {
     let table = asyncFunc();
     if (!table) return;
-    // Property 'status' does not exist on type 'Promise<void | { status: string; }>'.ts(2339)
+    // Property 'status' does not exist on type 'Promise<{ status: string; }>'.ts(2339)
     // WARNING: Did you forget to use 'await'?
     else if (table.status === 'ACTIVE') return table;
 }
